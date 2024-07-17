@@ -21,5 +21,13 @@ pipeline {
             }
         }
     }
+   post {
+        success {
+            script {
+                slackSend(channel: "iti-isi", message: "first pipeline send to slack passed successfully")
+            }
+        }
+    }
+    
 }
 

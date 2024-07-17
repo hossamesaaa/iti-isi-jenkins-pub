@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'myec2' }
+    agent any
 
     stages {
         stage('Build') {
